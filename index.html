@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- collapse serch start-->
+    <div class="alert alert-primary m-0 collapse" id="search">
+        <div class="container">
+
+            <div class="input-group">
+                <input type="text" class="form-control" name="" id="">
+                <button type="button" class="btn btn-primary"><i class="bi bi-search"></i>Search</button>
+            </div>
+            <div class="row">
+                <h4 class="my-5">Quick Links</h4>
+                <div class="col-sm-3">
+                    <!-- p for put elements in block or column manner -->
+                    <p>
+                        <a href="">Link1</a>
+                    </p>
+                    <p>
+                        <a href="">Link2</a>
+                    </p>
+                    <p>
+                        <a href="">Link3</a>
+                    </p>
+                    <p>
+                        <a href="">Link4</a>
+                    </p>
+
+
+                </div>
+                <div class="col-sm-3">
+                    <p>
+                        <a href="">Link1</a>
+                    </p>
+                    <p>
+                        <a href="">Link2</a>
+                    </p>
+                    <p>
+                        <a href="">Link3</a>
+                    </p>
+                    <p>
+                        <a href="">Link4</a>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6"><img class="img-fluid"
+                                        src="https://rukminim1.flixcart.com/image/416/416/xif0q/computer/d/b/j/-original-imagjfgy6ghyqssh.jpeg?q=70"
+                                        alt=""></div>
+                                <div class="col-sm-6">
+                                    <h3>Featured products</h3>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <button type="button" class="btn btn-outline-primary">Shop now</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- collapse serch end-->
+
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">SKILLKART</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <!-- dropdown start -->
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown">
+                        menu
+                    </button>
+                    <ul class="dropdown-menu w-100 alert alert-primary">
+                        <div class="container">
+
+                            <div class="row">
+
+                                <div class="col-sm-4 d-flex my-4 gap-5">
+                                    <span class="fs-1"><i class="bi bi-bag"></i></span>
+                                    <div>
+                                        <h3>laptop</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-4 gap-5">
+                                    <span class="fs-1"><i class="bi bi-bag"></i></span>
+                                    <div>
+                                        <h3>laptop</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 d-flex my-4 gap-5">
+                                    <span class="fs-1"><i class="bi bi-bag"></i></span>
+                                    <div>
+                                        <h3>laptop</h3>
+                                        <p>Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </div>
+                </ul>
+            </div>
+            <!-- dropdown end -->
+
+        </div>
+        <!-- search button -->
+        <div class="ms-auto">
+            <button type="button" class="btn btn-outline-light" data-bs-toggle="collapse" data-bs-target="#search"><i
+                    class="bi bi-search"></i></button>
+        </div>
+
+        <!-- bag button -->
+        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#cart"><i
+                class="bi bi-bag"></i></button>
+
+        <!-- login button -->
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#login">
+            login <i class="bi bi-person-check"></i>
+        </button>
+
+        </div>
+        </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- login -->
+
+    <div class="offcanvas offcanvas-start" id="login">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title bg-primary text-light w-100" id="offcanvasExampleLabel">login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Enter Email</p>
+            <input type="text" class="form-control" placeholder="Enter Email">
+            <br>
+            <p>Enter Password</p>
+            <input type="text" class="form-control" placeholder="Enter Password">
+            <br>
+            <button type="button" class="btn btn-primary w-100">login</button>
+        </div>
+    </div>
+
+    <!-- collapse = searched bar -->
+
+    <!-- cart start  -->
+
+    <div class="offcanvas offcanvas-start" id="cart">
+        <div class="offcanvas-header bg-primary">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row">
+
+                        <div class="col-sm-5">
+                            <img class="img-fluid"
+                                src="https://rukminim1.flixcart.com/image/312/312/xif0q/computer/g/w/y/-original-imagmuhrzbmzwnee.jpeg?q=70"
+                                alt="">
+                        </div>
+                        <div class="col-sm-3">
+                            <span>Qty : 2</span>
+                        </div>
+                        <div class="col-sm-4">
+                            <strong>7822/-</strong>
+                        </div>
+                    </div>
+                    <h5 class="text-success">you have saved 750/-</h5>
+                    <div class="btn-group w-100">
+                        <button type="button" class="btn btn-danger">Remove</button>
+                        <button type="button" class="btn btn-warning">Whislist</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cart end -->
+
+    <!-- carousel start -->
+
+    <div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-interval="5000" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-sm-6 text-end">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Dell xps 13 pro</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatum.</p>
+                        <button type="button" class="btn btn-outline-primary">shop now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-sm-6 text-end">
+                        <img src="https://rukminim1.flixcart.com/image/312/312/l2m78280/computer/z/e/f/-original-imagdx9szs8xz2rk.jpeg?q=70"
+                            class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <h3>Dell xps 13 pro</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, voluptatum.</p>
+                        <button type="button" class="btn btn-outline-primary">shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- carousel end -->
+
+
+
+
+
+    <!-- Features start -->
+    <div class="bg-primary mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="d-flex gap-5 text-light">
+                        <span class="fs-1"><i class="bi bi-credit-card"></i></span>
+                        <div>
+                            <h3>Secure Checkout</h3>
+                            <span>Lorem, ipsum dolor.</span>
+                        </div>
+                        l
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-flex gap-5 text-light">
+                        <span class="fs-1"><i class="bi bi-box"></i></span>
+                        <div>
+                            <h3>Secure Checkout</h3>
+                            <span>Lorem, ipsum dolor.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="d-flex gap-5 text-light">
+                        <span class="fs-1"><i class="bi bi-bus-front"></i></span>
+                        <div>
+                            <h3>Secure Checkout</h3>
+                            <span>Lorem, ipsum dolor.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features end -->
+
+    <!-- featured products start -->
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col-sm-4 d-flex">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container d-flex">
+        <div class="row">
+            <div class="col-sm-4 d-flex">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/d/n/c/82c3a008ih-laptop-lenovo-original-imageexr8yzmydfd.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="col-sm-3">
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/c/f/p/82c3a008ih-laptop-lenovo-original-imageexrutvm5tpg.jpeg?q=70"
+                                    alt="">
+                                <br>
+                                <br>
+                                <img class="img-fluid"
+                                    src="https://rukminim1.flixcart.com/image/416/416/l3929ow0/computer/3/9/j/82c3a008ih-laptop-lenovo-original-imageexrahpyqbrg.jpeg?q=70"
+                                    alt="">
+                            </div>
+                            <div class="alert alert-primary">
+                                <div class="d-flex justify-content-between">
+                                    <span>Fake Brand</span>
+                                    <span>Starting from 875666</span>
+                                </div>
+                                <br>
+                                <button type="button" class="btn btn-outline-primary w-100">Shop Now</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- featured products end -->
+
+    <!-- router product start -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+
+                            <button type="button" class="btn btn-success text-light w-50">Most Popular</button>
+                            <span class="fs-3"><i class="bi bi-heart"></i></span>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <img height="150"
+                                src="https://rukminim1.flixcart.com/image/300/300/kw104nk0/router/d/o/o/-original-imag8shyey2gyu6n.jpeg?q=90"
+                                alt="">
+                            <h3>Routers</h3>
+                            <br>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                            <span><i class="bi bi-star"></i></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <!--router product end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
